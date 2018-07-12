@@ -1,0 +1,57 @@
+{%extends "layout.html"%}
+
+{%block body%}
+
+<style>
+  body{
+    background-color:rgba(20, 95, 122, 1);
+    color:white;
+  }
+  
+  #main{
+    background-image: url('https://irp-cdn.multiscreensite.com/79cf29e0/dms3rep/multi/background/footer-bg-img.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #main > img{
+    position: static;
+  }
+</style>
+
+
+
+
+<!--
+  <h1>{{hello}}</h1>
+  <a  class="btn btn-primary" href="{{ url_for('enter') }}">Create A Service</a>
+
+  <div style="padding-top: 3%">
+    <div style="background-color: #ebebeb; padding: 1%; border-radius: 3px" class="container">
+      <h3>The Devil and the Carnal Mind</h3>
+      <span>Tyler</span> | <span>2018-03-27</span> | Bro. Hawkins
+    </div>
+  </div>-->
+
+
+<a  class="btn btn-light" href="{{ url_for('enter') }}">Add Service</a><br><br>
+  {% for r in result %}
+  <div>
+      <div class="page-header">
+        <h3>{{ r.name }}</h3>
+      </div>
+      <div class="well">
+        <p>{{ r.location }} <b>|</b> {{r.date.strftime("%B %d, %Y %-I:%M%p")}}<b> | </b>{{r.minister}}<b> | </b>Assignee: {{r.assignee.name}}</p>
+      </div>
+  </div>
+  {% endfor %}
+
+{%endblock%}
+
+
+{%block scripts%}
+  {{super()}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js</script"></script>
+{%endblock%}

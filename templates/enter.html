@@ -1,0 +1,77 @@
+{%extends "layout.html"%}
+
+{%block body%}
+<div class="container">
+  <form class="form-signin" method="post" action="/process">
+    <h2 class="form-signin-heading">Please Complete Info</h2>
+    <div class="form-group">
+      <label for="nm" class="sr-only">Service Name</label>
+      <input type="text" id="nm" name="name" class="form-control" aria-label="1" placeholder="Service Name" required autofocus><br>
+      <!--
+      <label for="inputDate" class="sr-only">Date</label>
+      <input type="text" id="inputDate" name="date" class="form-control" placeholder="Date" required autofocus>-->
+
+      <label for="lk" class="sr-only">Link</label>
+      <input type="text" id="lk" name="link" class="form-control" placeholder="Link" required autofocus>
+    </div>
+      <!--
+      <label for="inputLoc" class="sr-only">Location</label>
+      <input type="text" id="inputLoc" name="location" class="form-control" placeholder="Location" required autofocus>-->
+      
+      <div class="form-group">
+        <label for="loc">Assembly</label>
+        <select name="location" class="form-control" id="loc" required autofocus>
+          <option>UC</option>
+          <option>VJO</option>
+          <option>MV</option>
+          <option>TY</option>
+          <option>BTR</option>
+          <option>XEN</option>
+          <option>IND</option>
+          <option>OH</option>
+          <option>STKB</option>
+          <option>GRNV</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="min">Minister</label>
+        <select name="minister" class="form-control" id="min" required autofocus>
+          <option>Bro. Michael Parker</option>
+          <option>Bro. Lacey Hawkins</option>
+          <option>Bro. Darrel Booker</option>
+          <option>Bro. Vern Kelly</option>
+          <option>Bro. Caesar English</option>
+          <option>Bro. Robert Wright</option>
+          <option>Bro. Johnte Jones</option>
+          <option>Bro. Freddie Web</option>
+        </select>
+      </div>
+      
+    <div class="form-group">
+        <label for="assi">Assignee</label>
+        <select name="assignee" class="form-control" id="assi" required autofocus>
+          <option>Raphael</option>
+          <option>Kamira</option>
+          <option>Chris</option>
+          <option>Willie</option>
+          <option>Corel</option>
+          <option>Reneta</option>
+          <option>Cassandra</option>
+          <option>Jacqueline</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+      <label for="comm" class="sr-only">Comment:</label>
+        <textarea class="form-control" name="comment" rows="5" id="comm" placeholder="Comment" required></textarea>
+    </div>
+<div class="form-group"> 
+      <label for="exp" class="sr-only">Expiration</label>
+      <input type="text" id="exp" name="expiration" class="form-control" placeholder="Expiration" required autofocus>
+    </div>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  </form>
+</div> <!-- /container -->
+{%endblock%}
