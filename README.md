@@ -1,9 +1,6 @@
 # Service-Log
 Service Log
 
-A flask app to help me get more healthy. Based on my research.
-
-
 ## 1. Install SQLAlchemy
 
 <pre>pip install sqlalchemy</pre>
