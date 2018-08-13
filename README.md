@@ -26,6 +26,7 @@ python3 app.py
 
 It will run on `port 5000` in debug mode.
 
+Enter the following in your browser:
 <pre>
 http://http://localhost:5000
 </pre>
