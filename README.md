@@ -30,3 +30,5 @@ Enter the following in your browser:
 <pre>
 http://http://localhost:5000
 </pre>
+
+![](https://github.com/TutorialDoctor/Service-Log/blob/master/screen.png?raw=true)
