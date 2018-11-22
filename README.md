@@ -28,7 +28,7 @@ It will run on `port 5000` in debug mode.
 
 Enter the following in your browser:
 <pre>
-http://http://localhost:5000
+http://localhost:5000
 </pre>
 
 ![](https://github.com/TutorialDoctor/Service-Log/blob/master/screen.png)
